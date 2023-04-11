@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="/main.css">
 </head>
+
 <body>
 
-    <div class = "chatContainer">
+    <div class="chatContainer">
 
-        <div class = "chatBox">
+        <div class="chatBox">
 
+            <ul id="messages">
+
+            </ul>
 
         </div>
 
-        <div class = "chatInput">
-            <input type = "text" placeholder = "Type a message...">
-            <button>Send</button>
+        <div class="chatInput">
+            <input id="chatInputText" type="text" placeholder="/ to type">
+            <button id="submitBtn">Send</button>
 
         </div>
 
     </div>
 
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/comsHandler.js"></script>
+    <script src="/slashType.js"></script>
 
 </body>
+
 </html>

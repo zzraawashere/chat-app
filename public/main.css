@@ -1,0 +1,250 @@
+/* Set the background color of the body to a shade of blue */
+body {
+    background-color: #6aa6f8;
+    font-family: noto sans, sans-serif;
+}
+
+/* Style the chat container */
+.chatContainer {
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* Reduce the bottom padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* Add this line */
+    position: relative;
+}
+
+/* Style the chat box */
+.chatBox {
+    background-color: #fff;
+    min-height: calc(100% - 200px);
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Add this line */
+    border-radius: 5px;
+    /* Add this line */
+    border: 1px solid #ccc;
+    /* Add this line */
+    width: 100%;
+}
+
+.chatBox ul li {
+ 
+    margin-top: .5em;
+    list-style: none;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: noto sans, sans-serif;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+/* Style the chat input and submit button */
+.chatInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 50px;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    border-radius: .25em;
+    width: 75%;
+    transition: all 0.2s ease-in-out; /* Add transition */
+}
+
+.chatInput input[type="text"] {
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: noto sans, sans-serif;
+}
+
+/* Optional: Add a hover effect to indicate the input is clickable */
+.chatInput:hover {
+    cursor: pointer;
+    height: 55px; /* Increase height */
+    width: 76%; /* Increase width */
+}
+
+.chatInput:focus {
+    cursor: pointer;
+    height: 55px; /* Increase height */
+    width: 76%; /* Increase width */
+}
+
+
+
+.chatInput button {
+    background-color: #4e8cff;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: 0.25em;
+}
+
+.chatInput button:hover {
+    background-color: #3868ca;
+}
+
+
+
+
+
+
+
+
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    height: 100vh;
+    overflow: hidden;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
